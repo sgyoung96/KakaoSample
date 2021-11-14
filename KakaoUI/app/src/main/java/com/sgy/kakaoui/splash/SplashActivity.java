@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.sgy.kakaoui.MainActivity;
+import com.sgy.kakaoui.base.BaseActivity;
 import com.sgy.kakaoui.databinding.ActivitySplashBinding;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
 
     ActivitySplashBinding binding;
 
@@ -17,6 +19,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        setStatusbarTranslucent(binding.vgMain);
 
         Thread task = new Thread(new Runnable() {
             @Override
