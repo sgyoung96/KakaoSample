@@ -5,6 +5,13 @@
     android:id="@+id/vg_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".splash.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_splash"
+        android:scaleType="centerCrop"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
