@@ -2,6 +2,7 @@ package com.sgy.kakaouiv2.base;
 
 import android.content.Context;
 import android.view.View;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,5 +15,10 @@ public class BaseActivity extends AppCompatActivity {
         } else {
             return 0;
         }
+    }
+
+    public void setStatusbarTranslucent(View v) {
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        v.setPadding(0, getStatusbarHeight(getApplicationContext()), 0, 0);
     }
 }

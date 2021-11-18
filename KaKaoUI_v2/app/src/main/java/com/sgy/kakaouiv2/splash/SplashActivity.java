@@ -19,6 +19,8 @@ public class SplashActivity extends BaseActivity {
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        setStatusbarTranslucent(binding.mainContainer);
+
         Thread th = new Thread(new Runnable() {
             @Override
             public void run() {

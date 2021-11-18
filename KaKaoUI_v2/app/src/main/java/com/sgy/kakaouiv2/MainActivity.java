@@ -16,5 +16,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        setStatusbarTranslucent(binding.mainContainer);
     }
 }
