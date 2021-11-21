@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">KakaoUiv3</string>
+
+    <string name="debug_title">MY_LOG:</string>
+    <string name="activity_create">Execute onCreate</string>
+    <string name="activity_resume">Execute onResume</string>
+    <string name="activity_pause">Execute onPause</string>
+    <string name="activity_destroy">Execute onDestroy</string>
+
+    <!-- LoginActivity -->
+    <string name="btn_login">로그인</string>
+    <string name="auto_login">잠금모드로 자동로그인</string>
+    <string name="find_id">카카오계정 찾기</string>
+    <string name="re_pw">비밀번호 재설정</string>
 </resources>
