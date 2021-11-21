@@ -2,6 +2,7 @@ package com.sgy.kakaov4.activity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,14 +20,16 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     public abstract void destroyActivity();
 
     public abstract void onViewClick(View v);
-    public abstract void setStatusbarPadding(View v, int height);
+    public abstract void setStatusbarPadding(int height);
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         SysUtil.MY_LOG(this, TAG, getString(R.string.activity_create));
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         createActivity();
+        setStatusbarPadding(getStatusbarHeight());
     }
 
     @Override

@@ -37,7 +37,7 @@ public class SplashActivity extends BaseActivity {
     }
 
     @Override
-    public void setStatusbarPadding(View v, int height) {
-        binding.mainContainer.setPadding(0, getStatusbarHeight(), 0, 0);
+    public void setStatusbarPadding(int height) {
+        // Layout 에 statusbar 높이만큼 padding 주기 -> view 가 statusbar 와 겹쳐 보이지 않도록
     }
 }

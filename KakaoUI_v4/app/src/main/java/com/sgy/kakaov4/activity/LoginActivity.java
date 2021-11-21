@@ -37,7 +37,7 @@ public class LoginActivity extends BaseActivity {
     }
 
     @Override
-    public void setStatusbarPadding(View v, int height) {
+    public void setStatusbarPadding(int height) {
 
     }
 }
