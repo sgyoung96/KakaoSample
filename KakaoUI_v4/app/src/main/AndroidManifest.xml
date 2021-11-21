@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kakaov4">
         <activity
+            android:name=".activity.test.TestActivity"
+            android:exported="true" />
+        <activity
             android:name=".activity.LoginActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".activity.SplashActivity"
             android:exported="true">
@@ -24,8 +26,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

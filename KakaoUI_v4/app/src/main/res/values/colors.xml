@@ -9,5 +9,11 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- custom color -->
+    <!-- common color -->
     <color name="translucent">#00000000</color>
+
+    <!-- LoginActivity -->
+    <color name="bg_login">#FAE100</color>
+    <color name="bg_login_btn">#403731</color>
+    <color name="view_gray">#8F8F8F</color>
 </resources>
