@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Kakaov4</string>
+
+    <!-- util -->
+    <string name="log_tag">MY_LOG :: </string>
+    <string name="activity_create">Execute onCreate</string>
+    <string name="activity_resume">Execute onResume</string>
+    <string name="activity_pause">Execute onPause</string>
+    <string name="activity_destroy">Execute onDestroy</string>
+
+    <!-- temp -->
+    <string name="statusbar_test">statusbar_test</string>
+
 </resources>
